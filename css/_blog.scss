@@ -1,0 +1,125 @@
+@import "color";
+@import "breakpoint";
+@import "mixin";
+
+#blog-page, #article-page {
+    .blog-maincopy {
+        background-position: center;
+        background-size: cover;
+        padding-block: 40px;
+        margin-bottom: 40px;
+        &.asahi {
+            background-image: url(../img/blog_bg_PC.svg);
+        }
+        &.izumi {
+            background-image: url(../img/blog_bg02_PC.svg);
+            p.orange {
+                text-shadow: 2px 2px 5px #E1A37A;
+            }
+        }
+        @include mq(tab) {
+            padding-block: 20px;
+            margin-bottom: 20px;
+        }
+        p.orange {
+            color: $color-orange;
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            @include mq(tab) {
+                font-size: 1rem;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .blog-cont {
+        width: 100%;
+        article.post {
+            margin: 0 auto 20px;
+            text-align: center;
+            > a {
+                margin: 0 auto 5px;
+                display: flex;
+                justify-content: center;
+                padding-bottom: 5px;
+                position: relative;
+                width: fit-content;
+                &::after {
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    background-color: $color-orange;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                }
+                p.date {
+                    margin-right: 20px;
+                }
+            }
+            .blog-btn {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                margin-top: 20px;
+                a {
+                    display: inline-block;
+                    background-color: $color-orange;
+                    color: #fff;
+                    padding-block: 12px;
+                    position: relative;
+                    @include mq(tab) {
+                        padding-block: 10px;
+                    }
+                    &.before {
+                        padding-right: 27px;
+                        padding-left: 55px;
+                        @include mq(tab) {
+                            padding-right: 12px;
+                            padding-left: 35px;
+                        }
+                        &::after {
+                            content: '';
+                            border-top: 12px solid transparent;
+                            border-right: 12px solid #fff;
+                            border-bottom: 12px solid transparent;
+                            position: absolute;
+                            top: 50%;
+                            left: 27px;
+                            transform: translateY(-50%);
+                            @include mq(tab) {
+                                border-top: 8px solid transparent;
+                                border-right: 8px solid #fff;
+                                border-bottom: 8px solid transparent;
+                                left: 15px;
+                                }
+                            }
+                        }
+                        &:nth-of-type(2) {
+                            padding-right: 55px;
+                            padding-left: 27px;
+                            @include mq(tab) {
+                                padding-right: 35px;
+                                padding-left: 12px;
+                            }
+                            &::after {
+                                content: '';
+                                border-top: 12px solid transparent;
+                                border-left: 12px solid #fff;
+                                border-bottom: 12px solid transparent;
+                                position: absolute;
+                                top: 50%;
+                                right: 27px;
+                                transform: translateY(-50%);
+                                @include mq(tab) {
+                                    border-top: 8px solid transparent;
+                                    border-left: 8px solid #fff;
+                                    border-bottom: 8px solid transparent;
+                                    right: 15px;
+                                    }
+                                }
+                        }
+                    }
+                }
+            }
+        }
+    }

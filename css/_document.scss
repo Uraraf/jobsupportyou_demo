@@ -1,0 +1,48 @@
+@import "color";
+@import "breakpoint";
+@import "mixin";
+
+#document-page {
+    .document-cont {
+        text-align: left;
+        .document-item {
+            margin-top: 20px;
+            @include mq(tab) {
+                margin-top: 10px;
+            }
+            ul {
+                @include mq(tab) {
+                    padding-inline: 20px;
+                }
+                li {
+                    width: 25%;
+                    border: solid 1px $color-orange;
+                    text-align: center;
+                    padding-block: 25px;
+                    @include mq(tab) {
+                        width: 50%;
+                        padding-block: 10px;
+                    }
+                    img {
+                        width: 75%;
+                    }
+                    a.btn {
+                        &.download {
+                            width: 75%;
+                            font-size: 0.875rem;
+                            padding: 8px 30px 8px 13px;
+                            @include mq(tab) {
+                                width: 90%;
+                                font-size: 0.75rem;
+                                padding: 5px 25px 5px 10px;
+                            }
+                        }
+                        &.contact-form {
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

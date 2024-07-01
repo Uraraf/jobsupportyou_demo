@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="">
+    <!-- reset.css読み込み -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <!-- プラグイン「slick」のcssを読み込む -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+
+    <!-- style.cssの読み込み -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <h1 class="site-logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="会社ロゴ">
+                </a>
+            </h1>
+            <nav class="nav-pc">
+                <ul class="nav-menu">
+                    <li class="has-child">
+                        <a href="#">会社情報</a>
+                        <ul class="head-sub">
+                            <li><a href="company.html">会社概要</a></li>
+                            <li><a href="attempt.html">弊社の取り組み</a></li>
+                            <li><a href="document.html">資料請求</a></li>
+                            <li class="has-child staff">
+                                <a href="#">職員紹介</a>
+                                <ul class="staff-sub">
+                                    <li><a href="staff_asahi.html">JOBサポートYOU旭ヶ丘</a></li>
+                                    <li><a href="staff_izumi.html">JOBサポートYOU泉中央</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="privacypolicy.html">利用規約</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="service.html">事業内容</a></li>
+                    <li><a href="access.html">アクセス</a></li>
+                    <li class="has-child">
+                        <a href="#">ブログ</a>
+                        <ul class="head-sub blog">
+                            <li><a href="blog_asahi.html">そら大好き子さんのブログ</a></li>
+                            <li><a href="blog_izumi.html">JOBサポートYOU泉中央</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-child">
+                        <a href="#">企業様へ</a>
+                        <ul class="head-sub company">
+                            <li><a href="tocompany.html">障害者雇用をお考えの企業様へ</a></li>
+                            <li><a href="outsourcing.html">アウトソーシング</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="recruit.html">採用について</a></li>
+                </ul>
+            </nav>
+            <nav class="nav-sp">
+                <ul class="nav-menu">
+                    <li class="has-child"><a href="#">会社情報</a>
+                        <ul class="head-sub">
+                            <li><a href="company.html">-会社概要</a></li>
+                            <li><a href="attempt.html">-弊社の取り組み</a></li>
+                            <li><a href="document.html">-資料請求</a></li>
+                            <li>
+                                <a href="#">-職員紹介</a>
+                                <ul class="head-sub staff">
+                                    <li><a href="staff_asahi.html">・JOBサポートYOU旭ヶ丘</a></li>
+                                    <li><a href="staff_izumi.html">・JOBサポートYOU泉中央</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="privacypolicy.html">-利用規約</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="service.html">事業内容</a></li>
+                    <li><a href="access.html">アクセス</a></li>
+                    <li class="has-child">
+                        <a href="#">ブログ</a>
+                        <ul class="head-sub">
+                            <li><a href="blog_asahi.html">-そら大好き子さんのブログ</a></li>
+                            <li><a href="blog_izumi.html">-JOBサポートYOU泉中央</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-child"><a href="#">企業様へ</a>
+                        <ul class="head-sub">
+                            <li><a href="tocompany.html">-障害者雇用をお考えの企業様へ</a></li>
+                            <li><a href="outsourcing.html">-アウトソーシング</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="recruit.html">採用について</a></li>
+                </ul>
+            </nav>
+            <div class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="tocompany-page">
+            <div class="section-inner">
+                <h3 class="section-title-page">障害者雇用をお考えの企業様へ</h3>
+                <ul class="tocompany-cont">
+                    <li>
+                        <h4 class="head">障害者の雇用の促進に関する法律について</h4>
+                        <p>・障害者雇用促進法の目的<br>
+                            障害者の雇用義務等に基づく就労の促進等のための措置をとる。職業リハビリテーションの措置等を通じて、障害者の職業の安定を図る。
+                        </p>
+                    </li>
+                    <li>
+                        <h4 class="head">お問い合わせフォーム</h4>
+                        <p>
+                            障害者雇用をお考えの企業様向けのお問い合わせフォームになります。<br>
+                            必要事項をフォームに沿って入力をお願い致します。<br>
+                            翌営業日以内に入力いただいたご担当者様へご連絡させていただきます。
+                        </p>
+                        <div class="btn-cont">
+                            <div class="btn-item">
+                                <a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/shougaishakoyou/shisaku/jigyounushi/intro-joseikin.html" class="btn hp-mhlw">厚生労働省HP</a>
+                            </div>
+                            <div class="btn-item">
+                                <a href="contact.html" class="btn contact-form">お問い合わせはこちら</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="section-inner">
+            <div class="footer-cont">
+                <a class="twitter-timeline" data-width="70%" data-height="200" href="https://twitter.com/YOU15800612?ref_src=twsrc%5Etfw">Tweets by YOU15800612</a>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="#">会社情報</a>
+                        <ul class="head-sub">
+                            <li><a href="company.html">-会社概要</a></li>
+                            <li><a href="attempt.html">-弊社の取り組み</a></li>
+                            <li><a href="document.html">-資料請求</a></li>
+                            <li>
+                                <a href="staff.html">-職員紹介</a>
+                                <ul class="head-sub">
+                                    <li><a href="staff_asahi.html">・JOBサポートYOU旭ヶ丘</a></li>
+                                    <li><a href="staff_izumi.html">・JOBサポートYOU泉中央</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="privacypolicy.html">-利用規約</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="service.html">事業内容</a></li>
+                    <li><a href="access.html">アクセス</a></li>
+                    <li><a href="#">ブログ</a>
+                        <ul class="head-sub">
+                            <li><a href="blog_asahi.html">-そら大好き子さんのブログ</a></li>
+                            <li><a href="blog_izumi.html">-JOBサポートYOU泉中央</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">企業様へ</a>
+                        <ul class="head-sub">
+                            <li><a href="tocompany.html">-障害者雇用をお考えの企業様へ</a></li>
+                            <li><a href="outsourcing.html">-アウトソーシング</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="recruit.html">採用について</a></li>
+                </ul>
+            </div>
+            <p>&copy;JOB SUPPORT YOU ASAHIGAOKA</p>
+        </div>
+    </footer>
+
+    <!-- jQueryの読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!--slickの読み込み -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <!-- javascript読み込み -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

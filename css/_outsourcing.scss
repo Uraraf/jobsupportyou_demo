@@ -1,0 +1,42 @@
+@import "color";
+@import "breakpoint";
+@import "mixin";
+
+#outsourcing-page {
+    .section-inner {
+        .outsourcing-cont {
+            margin: 0 auto;
+            text-align: left;
+            p.outsourcing-text {
+                font-size: 1.25rem;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+            ul {
+                li {
+                    margin-bottom: 10px;
+                    padding-left: 50px;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        width: 35px;
+                        height: 35px;
+                        background-image: url(../img/icon_check01.svg);
+                        background-size: contain;
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+        .outcourcing-contact {
+            text-align: left;
+            margin-top: 30px;
+            .btn-item {
+                margin-top: 10px;
+            }
+        }
+    }
+}

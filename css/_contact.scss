@@ -1,0 +1,70 @@
+@import "color";
+@import "breakpoint";
+@import "mixin";
+
+#contact-page {
+    .section-inner {
+        img {
+            width: 100%;
+        }
+        p {
+            text-align: left;
+            margin-block: 20px;
+            @include mq(tab) {
+                margin-block: 10px;
+            }
+        }
+        .form-unit {
+            width: 100%;
+            display: flex;
+            label {
+                display: block;
+                background-color: rgba(51,51,51,0.2);
+                border: 1px solid rgba(51,51,51,0.2);
+                border-bottom: none;
+                width: 35%;
+                padding-block: 10px;
+                &.detail {
+                    border-bottom: 1px solid rgba(51,51,51,0.2);
+                }
+            }
+            input, select, textarea {
+                width: 65%;
+                border: 1px solid rgba(51,51,51,0.2);
+                border-left: none;
+                border-bottom: none;
+                background-color: #fff;
+                padding-block: 10px;
+                padding-inline: 20px;
+            }
+            textarea {
+                border-bottom: 1px solid rgba(51,51,51,0.2);
+            }
+            select {
+                option {
+                    color: #333;
+                    &:first-child {
+                        color: #333;
+                    }
+                    &:invalid {
+                        color: rgba(51,51,51,0.2);
+                    }
+                }
+            }
+        }
+        input.form-submit {
+            margin-top: 20px;
+            padding-block: 10px;
+            padding-inline: 25px;
+            display: inline-block;
+            background-color: $color-orange;
+            color: #fff;
+            border: 1px solid $color-orange;
+            transition: 0.3s;
+            &:hover {
+                background-color: #fff;
+                color: $color-orange;
+            }
+        }
+    }
+}

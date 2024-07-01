@@ -1,0 +1,38 @@
+@import "color";
+@import "breakpoint";
+@import "mixin";
+
+footer {
+    width: 100%;
+    padding-block: 30px;
+    background-color: rgba(51,51,51,0.2);
+    font-size: 0.75rem;
+    @include mq(tab) {
+        font-size: 0.625rem;
+    }
+    .section-inner {
+        .footer-cont {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row-reverse;
+            margin-bottom: 20px;
+            @include mq(tab) {
+                flex-direction: column-reverse;
+            }
+            .nav-menu {
+                text-align: left;
+                @include mq(tab) {
+                    margin-bottom: 20px;
+                    margin-left: -60px;
+                }
+                > li {
+                    margin-bottom: 5px;
+                    .head-sub {
+                        margin-left: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

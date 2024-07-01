@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="">
+    <!-- reset.css読み込み -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <!-- プラグイン「slick」のcssを読み込む -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+
+    <!-- style.cssの読み込み -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <h1 class="site-logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="会社ロゴ">
+                </a>
+            </h1>
+            <nav class="nav-pc">
+                <ul class="nav-menu">
+                    <li class="has-child">
+                        <a href="#">会社情報</a>
+                        <ul class="head-sub">
+                            <li><a href="company.html">会社概要</a></li>
+                            <li><a href="attempt.html">弊社の取り組み</a></li>
+                            <li><a href="document.html">資料請求</a></li>
+                            <li class="has-child staff">
+                                <a href="#">職員紹介</a>
+                                <ul class="staff-sub">
+                                    <li><a href="staff_asahi.html">JOBサポートYOU旭ヶ丘</a></li>
+                                    <li><a href="staff_izumi.html">JOBサポートYOU泉中央</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="privacypolicy.html">利用規約</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="service.html">事業内容</a></li>
+                    <li><a href="access.html">アクセス</a></li>
+                    <li class="has-child">
+                        <a href="#">ブログ</a>
+                        <ul class="head-sub blog">
+                            <li><a href="blog_asahi.html">そら大好き子さんのブログ</a></li>
+                            <li><a href="blog_izumi.html">JOBサポートYOU泉中央</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-child">
+                        <a href="#">企業様へ</a>
+                        <ul class="head-sub company">
+                            <li><a href="tocompany.html">障害者雇用をお考えの企業様へ</a></li>
+                            <li><a href="outsourcing.html">アウトソーシング</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="recruit.html">採用について</a></li>
+                </ul>
+            </nav>
+            <nav class="nav-sp">
+                <ul class="nav-menu">
+                    <li class="has-child"><a href="#">会社情報</a>
+                        <ul class="head-sub">
+                            <li><a href="company.html">-会社概要</a></li>
+                            <li><a href="attempt.html">-弊社の取り組み</a></li>
+                            <li><a href="document.html">-資料請求</a></li>
+                            <li>
+                                <a href="#">-職員紹介</a>
+                                <ul class="head-sub staff">
+                                    <li><a href="staff_asahi.html">・JOBサポートYOU旭ヶ丘</a></li>
+                                    <li><a href="staff_izumi.html">・JOBサポートYOU泉中央</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="privacypolicy.html">-利用規約</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="service.html">事業内容</a></li>
+                    <li><a href="access.html">アクセス</a></li>
+                    <li class="has-child">
+                        <a href="#">ブログ</a>
+                        <ul class="head-sub">
+                            <li><a href="blog_asahi.html">-そら大好き子さんのブログ</a></li>
+                            <li><a href="blog_izumi.html">-JOBサポートYOU泉中央</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-child"><a href="#">企業様へ</a>
+                        <ul class="head-sub">
+                            <li><a href="tocompany.html">-障害者雇用をお考えの企業様へ</a></li>
+                            <li><a href="outsourcing.html">-アウトソーシング</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="recruit.html">採用について</a></li>
+                </ul>
+            </nav>
+            <div class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="recruit-page">
+            <div class="section-inner">
+                <h3 class="section-title-page"><span class="section-title-en">RECRUIT</span>採用について</h3>
+                <div class="recruit-cont">
+                    <p>就労継続支援B型の支援員（正職員・パート職員）を募集中！</p>
+                    <div class="recruit-text">
+                        <p class="underline">就労継続支援B型とは</p>
+                        <p>
+                            利用者の方が通所して、作業や訓練を行い自立した生活をするためのサポートをする仕事です。生産活動や生活支援、相談支援などを通して支援していきます。
+                        </p>
+                        <p class="underline">生産活動とは</p>
+                        <ul class="recruit-work">
+                            <li>書類の電子化（データ入力・スキャン・PDFファイル名変更）</li>
+                            <li>IT受託業務（証憑登録、AI文章校正）</li>
+                            <li>DM（ダイレクトメール作成）</li>
+                            <li>シュレッダー</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="application">
+                    <h4 class="head">募集要項</h4>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>雇用形態</td>
+                                <td>正社員・パート職員（週20時間以上）</td>
+                            </tr>
+                            <tr>
+                                <td>募集条件</td>
+                                <td>不問<br>無資格未経験者歓迎</td>
+                            </tr>
+                            <tr>
+                                <td>必要資格</td>
+                                <td>普通自動車免許(ＡＴ可)</td>
+                            </tr>
+                            <tr>
+                                <td>勤務先</td>
+                                <td>ジョブサポートYOU旭ヶ丘<br>ジョブサポートYOU泉中央
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>勤務時間</td>
+                                <td>8:30～17:30</td>
+                            </tr>
+                            <tr>
+                                <td>給与</td>
+                                <td>
+                                    【月給】189,960円～213,960円<br>
+                                    【時給】960円～980円
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>手当等</td>
+                                <td>
+                                    <ul class="disc">
+                                        <li>交通費：当社規定により支給</li>
+                                        <li>運転手当：5,000円/月(送迎業務有の場合)</li>
+                                        <li>資格手当：2,000円～29,500円
+                                            <p>
+                                                例）初任者研修　2,000円/月、介護福祉士 10,000円/月
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>福利厚生</td>
+                                <td>
+                                    <ul class="disc">
+                                        <li>社会保険完備<br>（健康・厚生年金・雇用・労災）</li>
+                                        <li>休日　月9日（2月は8日）<br>※冬期休暇あり</li>
+                                        <li>県外からの転居者向け家賃補助制度あり<br>（例：正社員雇用　月額20000円を3年間家賃補助あり）</li>
+                                        <li>育児・介護休業制度あり</li>
+                                        <li>育児短時間勤務制度あり</li>
+                                        <li>
+                                            資格取得支援制度<br>
+                                            　-介護職員初任者研修<br>
+                                            　-介護職員実務者研修<br>
+                                            （以上受講費、全額法人負担）
+                                        </li>
+                                        <li>研修制度あり<br>（新入社員研修、実技研修）</li>
+                                        <li>受動喫煙対策あり<br>（敷地内禁煙）</li>
+                                        <li>給与は前給、経験を考慮します</li>
+                                        <li>昇給　年1回</li>
+                                        <li>退職金制度あり<br>（確定拠出年金を充てています）</li>
+                                        <li>インフルエンザ予防接種<br>（法人負担※上限3,500円）</li>
+                                        <li>定年制あり</li>
+                                        <li>再雇用制度あり（上限60歳）</li>
+                                        <li>勤務延長あり（上限64歳）</li>
+                                        <li>復職制度あり</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>仕事内容</td>
+                                <td>
+                                    <ul class>
+                                        <li>〇障がい者就労支援サービスの支援員、指導員業務全般</li>
+                                        <li>◎資格・経験不問<br>
+                                            ※先輩スタッフが丁寧に指導いたします
+                                        </li>
+                                        <li>◎日勤のみ、日曜定休<br>
+                                            ※仕事と家庭・プライベートの両立が無理なく叶う職場です♪
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>応募方法</td>
+                                <td>
+                                    下記エントリーフォームより必要事項入力の上エントリー下さいますようお願い致します。<br>
+                                    または電話受付（022-762- 7571）人事労務課担当までご連絡ください。
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="entry-form">
+                    <h4 class="head">エントリーフォーム</h4>
+                    <div>
+                        <a href="contact.html" class="btn entry">エントリーフォームはこちら</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="section-inner">
+            <div class="footer-cont">
+                <a class="twitter-timeline" data-width="70%" data-height="200" href="https://twitter.com/YOU15800612?ref_src=twsrc%5Etfw">Tweets by YOU15800612</a>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="#">会社情報</a>
+                        <ul class="head-sub">
+                            <li><a href="company.html">-会社概要</a></li>
+                            <li><a href="attempt.html">-弊社の取り組み</a></li>
+                            <li><a href="document.html">-資料請求</a></li>
+                            <li>
+                                <a href="staff.html">-職員紹介</a>
+                                <ul class="head-sub">
+                                    <li><a href="staff_asahi.html">・JOBサポートYOU旭ヶ丘</a></li>
+                                    <li><a href="staff_izumi.html">・JOBサポートYOU泉中央</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="privacypolicy.html">-利用規約</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="service.html">事業内容</a></li>
+                    <li><a href="access.html">アクセス</a></li>
+                    <li><a href="#">ブログ</a>
+                        <ul class="head-sub">
+                            <li><a href="blog_asahi.html">-そら大好き子さんのブログ</a></li>
+                            <li><a href="blog_izumi.html">-JOBサポートYOU泉中央</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">企業様へ</a>
+                        <ul class="head-sub">
+                            <li><a href="tocompany.html">-障害者雇用をお考えの企業様へ</a></li>
+                            <li><a href="outsourcing.html">-アウトソーシング</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="recruit.html">採用について</a></li>
+                </ul>
+            </div>
+            <p>&copy;JOB SUPPORT YOU ASAHIGAOKA</p>
+        </div>
+    </footer>
+
+    <!-- jQueryの読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!--slickの読み込み -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <!-- javascript読み込み -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,294 @@
+@import "color";
+@import "breakpoint";
+@import "mixin";
+
+#service-page {
+    .service-maincopy {
+        width: 100%;
+        background-image: url(../img/service_bg_PC.svg);
+        background-position: center;
+        background-size: cover;
+        padding-block: 35px;
+        margin: 0 auto;
+        @include mq(tab) {
+            padding-block: 20px;
+        }
+        p {
+            width: 80%;
+            margin: 0 auto;
+            @include mq(tab) {
+                width: 92%;
+            }
+            span {
+                font-size: 1.25rem;
+                font-weight: 500;
+                color: $color-orange;
+                @include mq(tab) {
+                    font-size: 0.875rem;
+                }
+            }
+            &:nth-of-type(1) {
+                margin-bottom: 25px;
+                @include mq(tab) {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+    .section-inner {
+        .service-text {
+            margin-top: 30px;
+            @include mq(tab) {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+#job-page {
+    .job-cont {
+        margin-bottom: 25px;
+        &.flex {
+            > ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: stretch;
+                @include mq(tab) {
+                    flex-direction: column;
+                }
+                li.job-item {
+                    width: 48%;
+                    border: 1px solid #FFE79A;
+                    padding: 35px;
+                    @include mq(tab) {
+                        width: 100%;
+                        padding: 25px;
+                    }
+                    &:nth-of-type(1) {
+                        @include mq(tab) {
+                            margin-bottom: 20px;
+                        }
+                    }
+                    p.job-name {
+                        margin-bottom: 20px;
+                        color: $color-orange;
+                        font-size: 1.25rem;
+                        font-weight: 500;
+                        @include mq(tab) {
+                            font-size: 1rem;
+                            margin-bottom: 10px;
+                        }
+                    }
+                    img {
+                        width: 120px;
+                        margin-bottom: 20px;
+                    }
+                    ul.job-work {
+                        text-align: left;
+                        li {
+                            list-style-type: disc;
+                            list-style-position: inside;
+                            span.small {
+                                font-size: 0.75rem;
+                            }
+                            p.sub {
+                                padding-left: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .event-cont {
+        &.flex {
+            display: flex;
+            justify-content: center;
+            @include mq(tab) {
+                flex-direction: column;
+            }
+            .event-text {
+                width: 60%;
+                padding: 25px 30px;
+                text-align: left;
+                border: 3px solid #333;
+                border-radius: 30px;
+                margin-right: 20px;
+                @include mq(tab) {
+                    width: 100%;
+                    margin-right: 0;
+                    padding: 15px 25px;
+                    margin-bottom: 10px;
+                    }
+                }
+                img {
+                    @include mq(tab) {
+                        width: 70%;
+                        margin: 0 auto;
+                    }
+                }
+                p.orange {
+                    color: $color-orange;
+                    margin-bottom: 10px;
+                    @include mq(tab) {
+                        margin-bottom: 5px;
+                    }
+                }
+                ul {
+                    li {
+                        list-style-type: disc;
+                        list-style-position: inside;
+                    }
+                }
+            }
+        }
+    }
+
+#place-page {
+    .section-inner {
+        .place-cont {
+            text-align: left;
+            .place-item {
+                .underline {
+                    font-size: 1.25rem;
+                }
+                &.asahi {
+                    .satellite-office {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        .satellite-textblock {
+                            width: 70%;
+                        }
+                        .satellite-imgblock {
+                            width: 25%;
+                        }
+                    }
+                }
+                &.izumi {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+// slickのボタンcss
+.slick-prev:before, .slick-next:before {
+    color: #333;
+    opacity: 0.3;
+}
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+    color: #333;
+    opacity: 0.7;
+}
+
+#price-page {
+    .section-inner {
+        .price-cont {
+            width: 100%;
+            &.three-column {
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    tbody {
+                        tr {
+                            &:nth-of-type(1) {
+                                background-color: $color-bg;
+                            }
+                            td {
+                                padding-block: 20px;
+                                border: 1px solid $color-orange;
+                                @include mq(tab) {
+                                    padding-block: 10px;
+                                }
+                                &:nth-of-type(1) {
+                                    width: 20%;
+                                }
+                                &:nth-of-type(2){
+                                    width: 60%;
+                                    @include mq(tab) {
+                                        width: 55%;
+                                    }
+                                }
+                                &:nth-of-type(3) {
+                                    width: 20%;
+                                    @include mq(tab) {
+                                        width: 25%;
+                                    }
+                                }
+                                &.padding {
+                                    text-align: left;
+                                    padding-inline: 25px;
+                                    @include mq(tab) {
+                                        padding-inline: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                p.mark {
+                    margin-top: 25px;
+                    text-align: left;
+                    @include mq(tab) {
+                        margin-top: 10px;
+                    }
+                }
+            }
+            &.two-column {
+            p.orange {
+                text-align: left;
+                font-size: 1.25rem;
+                margin-top: 30px;
+                margin-bottom: 20px;
+                color: $color-orange;
+                @include mq(tab) {
+                    font-size: 1rem;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                }
+                }
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    tbody {
+                        tr {
+                            &:nth-of-type(1) {
+                                background-color: $color-bg;
+                            }
+                            td {
+                                padding-block: 20px;
+                                border: 1px solid $color-orange;
+                                @include mq(tab) {
+                                    padding-block: 10px;
+                                }
+                                &:nth-of-type(1) {
+                                    width: 50%;
+                                    @include mq(tab) {
+                                        width: 62%;
+                                    }
+                                }
+                                &:nth-of-type(2) {
+                                    width: 50%;
+                                    @include mq(tab) {
+                                        width: 38%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#other-page {
+    p {
+        text-align: left;
+    }
+}
+#transportation-page {
+    p {
+        text-align: left;
+    }
+}

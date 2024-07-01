@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="">
+    <!-- reset.css読み込み -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <!-- プラグイン「slick」のcssを読み込む -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+
+    <!-- style.cssの読み込み -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <h1 class="site-logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="会社ロゴ">
+                </a>
+            </h1>
+            <nav class="nav-pc">
+                <ul class="nav-menu">
+                    <li class="has-child">
+                        <a href="#">会社情報</a>
+                        <ul class="head-sub">
+                            <li><a href="company.html">会社概要</a></li>
+                            <li><a href="attempt.html">弊社の取り組み</a></li>
+                            <li><a href="document.html">資料請求</a></li>
+                            <li class="has-child staff">
+                                <a href="#">職員紹介</a>
+                                <ul class="staff-sub">
+                                    <li><a href="staff_asahi.html">JOBサポートYOU旭ヶ丘</a></li>
+                                    <li><a href="staff_izumi.html">JOBサポートYOU泉中央</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="privacypolicy.html">利用規約</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="service.html">事業内容</a></li>
+                    <li><a href="access.html">アクセス</a></li>
+                    <li class="has-child">
+                        <a href="#">ブログ</a>
+                        <ul class="head-sub blog">
+                            <li><a href="blog_asahi.html">そら大好き子さんのブログ</a></li>
+                            <li><a href="blog_izumi.html">JOBサポートYOU泉中央</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-child">
+                        <a href="#">企業様へ</a>
+                        <ul class="head-sub company">
+                            <li><a href="tocompany.html">障害者雇用をお考えの企業様へ</a></li>
+                            <li><a href="outsourcing.html">アウトソーシング</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="recruit.html">採用について</a></li>
+                </ul>
+            </nav>
+            <nav class="nav-sp">
+                <ul class="nav-menu">
+                    <li class="has-child"><a href="#">会社情報</a>
+                        <ul class="head-sub">
+                            <li><a href="company.html">-会社概要</a></li>
+                            <li><a href="attempt.html">-弊社の取り組み</a></li>
+                            <li><a href="document.html">-資料請求</a></li>
+                            <li>
+                                <a href="#">-職員紹介</a>
+                                <ul class="head-sub staff">
+                                    <li><a href="staff_asahi.html">・JOBサポートYOU旭ヶ丘</a></li>
+                                    <li><a href="staff_izumi.html">・JOBサポートYOU泉中央</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="privacypolicy.html">-利用規約</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="service.html">事業内容</a></li>
+                    <li><a href="access.html">アクセス</a></li>
+                    <li class="has-child">
+                        <a href="#">ブログ</a>
+                        <ul class="head-sub">
+                            <li><a href="blog_asahi.html">-そら大好き子さんのブログ</a></li>
+                            <li><a href="blog_izumi.html">-JOBサポートYOU泉中央</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-child"><a href="#">企業様へ</a>
+                        <ul class="head-sub">
+                            <li><a href="tocompany.html">-障害者雇用をお考えの企業様へ</a></li>
+                            <li><a href="outsourcing.html">-アウトソーシング</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="recruit.html">採用について</a></li>
+                </ul>
+            </nav>
+            <div class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="staff-page">
+            <h3 class="section-title-page"><span class="section-title-en">STAFF</span>職員紹介</h3>
+            <div class="section-inner">
+                <h4 class="head">ジョブサポートYOU泉中央</h4>
+                <div class="staff-cont flex">
+                    <ul class="staff-items">
+                        <li>
+                            <img src="img/staff-demo.svg" alt="">
+                            <div class="staff-text">
+                                <p class="name">テキストテキスト</p>
+                                <p class="staff-head">趣味</p>
+                                <p class="hobby">テキストテキストテキスト</p>
+                                <p class="staff-head">ひとこと</p>
+                                <p class="message">
+                                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/staff-demo.svg" alt="">
+                            <div class="staff-text">
+                                <p class="name">テキストテキスト</p>
+                                <p class="staff-head">趣味</p>
+                                <p class="hobby">テキストテキストテキスト</p>
+                                <p class="staff-head">ひとこと</p>
+                                <p class="message">
+                                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/staff-demo.svg" alt="">
+                            <div class="staff-text">
+                                <p class="name">テキストテキスト</p>
+                                <p class="staff-head">趣味</p>
+                                <p class="hobby">テキストテキストテキスト</p>
+                                <p class="staff-head">ひとこと</p>
+                                <p class="message">
+                                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/staff-demo.svg" alt="">
+                            <div class="staff-text">
+                                <p class="name">テキストテキスト</p>
+                                <p class="staff-head">趣味</p>
+                                <p class="hobby">テキストテキストテキスト</p>
+                                <p class="staff-head">ひとこと</p>
+                                <p class="message">
+                                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/staff-demo.svg" alt="">
+                            <div class="staff-text">
+                                <p class="name">テキストテキスト</p>
+                                <p class="staff-head">趣味</p>
+                                <p class="hobby">テキストテキストテキスト</p>
+                                <p class="staff-head">ひとこと</p>
+                                <p class="message">
+                                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/staff-demo.svg" alt="">
+                            <div class="staff-text">
+                                <p class="name">テキストテキスト</p>
+                                <p class="staff-head">趣味</p>
+                                <p class="hobby">テキストテキストテキスト</p>
+                                <p class="staff-head">ひとこと</p>
+                                <p class="message">
+                                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="section-inner">
+            <div class="footer-cont">
+                <a class="twitter-timeline" data-width="70%" data-height="200" href="https://twitter.com/YOU15800612?ref_src=twsrc%5Etfw">Tweets by YOU15800612</a>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="#">会社情報</a>
+                        <ul class="head-sub">
+                            <li><a href="company.html">-会社概要</a></li>
+                            <li><a href="attempt.html">-弊社の取り組み</a></li>
+                            <li><a href="document.html">-資料請求</a></li>
+                            <li>
+                                <a href="staff.html">-職員紹介</a>
+                                <ul class="head-sub">
+                                    <li><a href="staff_asahi.html">・JOBサポートYOU旭ヶ丘</a></li>
+                                    <li><a href="staff_izumi.html">・JOBサポートYOU泉中央</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="privacypolicy.html">-利用規約</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="service.html">事業内容</a></li>
+                    <li><a href="access.html">アクセス</a></li>
+                    <li><a href="#">ブログ</a>
+                        <ul class="head-sub">
+                            <li><a href="blog_asahi.html">-そら大好き子さんのブログ</a></li>
+                            <li><a href="blog_izumi.html">-JOBサポートYOU泉中央</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">企業様へ</a>
+                        <ul class="head-sub">
+                            <li><a href="tocompany.html">-障害者雇用をお考えの企業様へ</a></li>
+                            <li><a href="outsourcing.html">-アウトソーシング</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="recruit.html">採用について</a></li>
+                </ul>
+            </div>
+            <p>&copy;JOB SUPPORT YOU ASAHIGAOKA</p>
+        </div>
+    </footer>
+
+    <!-- jQueryの読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!--slickの読み込み -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <!-- javascript読み込み -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

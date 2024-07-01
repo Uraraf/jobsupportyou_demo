@@ -1,0 +1,103 @@
+@import "color";
+@import "breakpoint";
+@import "mixin";
+
+#recruit-page {
+    .section-inner {
+        .recruit-cont {
+            text-align: left;
+            margin-bottom: 40px;
+            @include mq(tab) {
+                margin-bottom: 20px;
+            }
+            > p {
+                margin-bottom: 20px;
+                @include mq(tab) {
+                    margin-bottom: 10px;
+                }
+            }
+            .recruit-text {
+                background-color: $color-bg;
+                padding: 20px 30px;
+                @include mq(tab) {
+                    padding: 20px;
+                }
+                p {
+                    &:nth-of-type(2) {
+                        margin-bottom: 20px;
+                        @include mq(tab) {
+                            margin-bottom: 10px;
+                        }
+                    }
+                    &.underline {
+                        z-index: 10;
+                        margin-bottom: 10px;
+                        @include mq(tab) {
+                            margin-bottom: 0;
+                        }
+                    &::after {
+                    background-color: $color-orange;
+                    bottom: 0;
+                        }
+                    }
+                }
+                ul.recruit-work {
+                    li {
+                        list-style-type: disc;
+                        list-style-position: inside;
+                    }
+                }
+            }
+        }
+        .application {
+            text-align: left;
+            margin-bottom: 40px;
+            @include mq(tab) {
+                margin-bottom: 20px;
+            }
+            table {
+                width: 100%;
+                text-align: center;
+                border-collapse: collapse;
+                tbody {
+                    tr {
+                        td {
+                            padding-block: 20px;
+                            @include mq(tab) {
+                                padding-block: 10px;
+                            }
+                            &:nth-of-type(1) {
+                                width: 30%;
+                                background-color: $color-bg;
+                                border: 1px solid $color-orange;
+                                @include mq(tab) {
+                                    width: 25%;
+                                }
+                            }
+                            &:nth-of-type(2) {
+                                width: 70%;
+                                border: 1px solid $color-orange;
+                                text-align: left;
+                                padding-inline: 40px;
+                                @include mq(tab) {
+                                    width: 75%;
+                                }
+                            }
+                            ul {
+                                &.disc {
+                                    li {
+                                        list-style-type: disc;
+                                        list-style-position: inside;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .entry-form {
+            text-align: left;
+        }
+    }
+}

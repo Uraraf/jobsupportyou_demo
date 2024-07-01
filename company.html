@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="">
+    <!-- reset.css読み込み -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <!-- プラグイン「slick」のcssを読み込む -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+
+    <!-- style.cssの読み込み -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <h1 class="site-logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="会社ロゴ">
+                </a>
+            </h1>
+            <nav class="nav-pc">
+                <ul class="nav-menu">
+                    <li class="has-child">
+                        <a href="#">会社情報</a>
+                        <ul class="head-sub">
+                            <li><a href="company.html">会社概要</a></li>
+                            <li><a href="attempt.html">弊社の取り組み</a></li>
+                            <li><a href="document.html">資料請求</a></li>
+                            <li class="has-child staff">
+                                <a href="#">職員紹介</a>
+                                <ul class="staff-sub">
+                                    <li><a href="staff_asahi.html">JOBサポートYOU旭ヶ丘</a></li>
+                                    <li><a href="staff_izumi.html">JOBサポートYOU泉中央</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="privacypolicy.html">利用規約</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="service.html">事業内容</a></li>
+                    <li><a href="access.html">アクセス</a></li>
+                    <li class="has-child">
+                        <a href="#">ブログ</a>
+                        <ul class="head-sub blog">
+                            <li><a href="blog_asahi.html">そら大好き子さんのブログ</a></li>
+                            <li><a href="blog_izumi.html">JOBサポートYOU泉中央</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-child">
+                        <a href="#">企業様へ</a>
+                        <ul class="head-sub company">
+                            <li><a href="tocompany.html">障害者雇用をお考えの企業様へ</a></li>
+                            <li><a href="outsourcing.html">アウトソーシング</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="recruit.html">採用について</a></li>
+                </ul>
+            </nav>
+            <nav class="nav-sp">
+                <ul class="nav-menu">
+                    <li class="has-child"><a href="#">会社情報</a>
+                        <ul class="head-sub">
+                            <li><a href="company.html">-会社概要</a></li>
+                            <li><a href="attempt.html">-弊社の取り組み</a></li>
+                            <li><a href="document.html">-資料請求</a></li>
+                            <li>
+                                <a href="#">-職員紹介</a>
+                                <ul class="head-sub staff">
+                                    <li><a href="staff_asahi.html">・JOBサポートYOU旭ヶ丘</a></li>
+                                    <li><a href="staff_izumi.html">・JOBサポートYOU泉中央</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="privacypolicy.html">-利用規約</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="service.html">事業内容</a></li>
+                    <li><a href="access.html">アクセス</a></li>
+                    <li class="has-child">
+                        <a href="#">ブログ</a>
+                        <ul class="head-sub">
+                            <li><a href="blog_asahi.html">-そら大好き子さんのブログ</a></li>
+                            <li><a href="blog_izumi.html">-JOBサポートYOU泉中央</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-child"><a href="#">企業様へ</a>
+                        <ul class="head-sub">
+                            <li><a href="tocompany.html">-障害者雇用をお考えの企業様へ</a></li>
+                            <li><a href="outsourcing.html">-アウトソーシング</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="recruit.html">採用について</a></li>
+                </ul>
+            </nav>
+            <div class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="company-page">
+            <div class="section-inner">
+                <h3 class="section-title-page"><span class="section-title-en">COMPANY</span>会社概要</h3>
+                <dl class="company-cont">
+                    <dt>運営会社</dt>
+                    <dd>株式会社人材サービスYOU</dd>
+                    <dt>代表者</dt>
+                    <dd>兼子　広喜</dd>
+                    <dt class="flex">住所</dt>
+                    <dd>〒980-0011 <br class="sp-only">仙台市青葉区上杉1丁目8-19</dd>
+                    <dt class="flex">電話番号</dt>
+                    <dd>TEL 022-354-0235 <br class="sp-only">FAX 022-354-0236</dd>
+                    <dt>設立</dt>
+                    <dd>平成25年3月22日</dd>
+                    <dt class="flex">事業内容</dt>
+                    <dd>
+                        <ul>
+                            <li>教育及び人材育成に関する事業</li>
+                            <li>各種資格取得講習会の主催及び通信教育事業</li>
+                            <li>介護職員初任者研修及び介護職員実務者研修等の実施並びに介護資格養成に関する事業</li>
+                            <li>医療従事者、介護保険事業等の経営コンサルタント業及びその業務委託</li>
+                            <li>職業安定法に基づく有料職業紹介業</li>
+                            <li>労働派遣事業</li>
+                            <li>前各号に付帯関連する一切の事業</li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+        </section>
+        <section id="guidelines-page">
+            <div class="section-inner">
+                <h3 class="section-title-page"><span class="section-title-en">GUIDELINES</span>会社理念</h3>
+                <div class="credo-item">
+                    <h4 class="head">ケア方針</h4>
+                    <p>
+                        医療・看護・介護を突き詰めれば極論として、『延命のみを考えての関わり』と『本人の【望む生き方】の中で自然な最後を迎えること』の選択になることはよく言われます。<br>
+                        人材サービスYOUのケア方針はどちらかの選択といえば後者です。<br>
+                        私たちは専門職としての知識を最大限生かして、お客様（患者さん）とご家族の【望む生き方】を支え実現を目指していくということです。
+                        ですが、安直にリスクがあっても『楽しければ良し』『本人が望めば良し』という意味ではございません。<br>
+                        医療・看護・介護に携わる専門職として、最大限にリスクを考慮、排除しながら本人の希望や望みを選択に入れていくという意味です。
+                        安全や延命のみを考えてのサービス提供ではなく、健康で楽しく、安心して、【望む生き方】を支えていく！心豊かに暮らせる環境を提供していく事を目指します。 ただし、家族や本人が安全を最優先と希望なさるのであれば、人材サービスYOUの方針は押し付けとなり、理解が得られないサービスになる可能性があります。<br>
+                        その場合は、【望む生き方】が『安全を最優先に考えてのサービス』となりますので、それを優先する必要があります。<br>
+                        リハビリ・機能訓練・そして介助方法などに関しても安全と残存機能の向上のどちらをという考えも、もちろん同じで、残存機能の向上を目指し【望む生き方】を少しでも続けられるようにすることが基本です。<br>
+                        しかしそれを進める中でも安全と本人の意欲や理解、そして家族や周りの関わる方の理解にも、きちんと向き合い配慮したうえで進めることが重要と考えます。
+                    </p>
+                </div>
+                <div class="credo-item">
+                    <h4 class="head">ビジョン</h4>
+                    <p class="underline">日本中に笑顔を創る法人になる</p>
+                    <p>
+                        みんなを笑顔に<br>
+                        お客様も<br>
+                        私たちも<br>
+                        閲わるすべての人々を！
+                    </p>
+                </div>
+                <div class="credo-item">
+                    <h4 class="head">ミッション</h4>
+                    <p class="underline">生活を護る</p>
+                    <p>
+                        喜びや感動にあふれた生活をサービスを通じて提供することによりお客様や関わる全ての人々の生活を設る！<br>
+                        事業を創造し充実した仕事にたずさわる事により私たちお互いの生活を渡る！
+                    </p>
+                </div>
+                <div class="credo-item">
+                    <h4 class="head">価値観</h4>
+                    <p>
+                        私たちは「買い手よし「」売り手よし」「世間よし」の
+                        【三方よし】の精神を自らの立場に置き換えて考え判断し信頼を得られることに価値を見出します。
+                    </p>
+                </div>
+                <div class="credo-item">
+                    <h4 class="head">私たちのあり方</h4>
+                    <ul class="ourway">
+                        <li>人材サービスYOUで働く私たちのお客様へのあり方は「明るく元気であること」です。</li>
+                        <li>人材サービスYOUで働く私たちの職場の仲間同士のあり方は「誠実であること」です。</li>
+                        <li>人材サービスYOUで働く私たちが提供する商品やサーピスのあり方は「丁寧であること」です。</li>
+                        <li>人材サービスYOUで働く私たちが行う環境整備のあり方は「清潔であること」です。</li>
+                        <li>人材サービスYOUで働く私たちの自分自身へのあり方は「素直であること」です。</li>
+                    </ul>
+                </div>
+                <div class="credo-item">
+                    <h4 class="head">行動指針</h4>
+                    <ol class="guidelines">
+                        <li>私達が最も重要と考えている『価値観』は、仕事を遂行する上での判断基準です。全員がこれを受け止め考えそして行動に反映します。</li>
+                        <li>私達は何の為にサービスを提供しているのか、『使命』としてその存在意義を持たなければなりません。全員がこれを理解し自分のものとして受け止め仕事に反映します。</li>
+                        <li>私達の向かう先を『ビジョン』として掲げ、これに向かい達成出来るよう努めます。</li>
+                        <li>目標は全員に伝え共有します。これを達成するのは私達一人ひとりの責務です。</li>
+                        <li>私達はお客様や関わる全ての方に対して、好感の持てる気持ちの良い挨拶を実践します。</li>
+                        <li>私達はプロフェッショナルとして、お客様や関わる全ての方に対し節度を持って接します。</li>
+                        <li>私達はプロフェッショナルとして、知識・技術を自ら習得して行く役目があります。</li>
+                        <li>私達は法人の代表として好感の持てる身だしなみをし、暖かさと清潔感を表す役目があります。</li>
+                        <li>仕事を遂行するうえで『整理・整頓』を徹底し、職場環境を整えるのは私達の責務です。</li>
+                        <li>私達には最高のチームワークを実践する為に、『報告・連絡・相談』の徹底を実践する責務があります。</li>
+                        <li>誇りと喜びに満ちた職場環境を作る為に、全てのスタッフは自分が関係する仕事に提案する権利があります。</li>
+                        <li>苦情を受けた人は自分のものとして受け止め、お客様が満足されるよう解決します。</li>
+                        <li>私達は事故の予防はもちろん非常時の対応すべてを認識し、安全で事故のない職場環境を作ります。</li>
+                        <li>法人の資産を守るのは私達の責務です。エネルギーを節約し職場の 環境保全に努めます。</li>
+                        <li>私達はお客様や関わる全ての方の満足のため、部門を越えたサービスを実現します。</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="section-inner">
+            <div class="footer-cont">
+                <a class="twitter-timeline" data-width="70%" data-height="200" href="https://twitter.com/YOU15800612?ref_src=twsrc%5Etfw">Tweets by YOU15800612</a>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="#">会社情報</a>
+                        <ul class="head-sub">
+                            <li><a href="company.html">-会社概要</a></li>
+                            <li><a href="attempt.html">-弊社の取り組み</a></li>
+                            <li><a href="document.html">-資料請求</a></li>
+                            <li>
+                                <a href="staff.html">-職員紹介</a>
+                                <ul class="head-sub">
+                                    <li><a href="staff_asahi.html">・JOBサポートYOU旭ヶ丘</a></li>
+                                    <li><a href="staff_izumi.html">・JOBサポートYOU泉中央</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="privacypolicy.html">-利用規約</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="service.html">事業内容</a></li>
+                    <li><a href="access.html">アクセス</a></li>
+                    <li><a href="#">ブログ</a>
+                        <ul class="head-sub">
+                            <li><a href="blog_asahi.html">-そら大好き子さんのブログ</a></li>
+                            <li><a href="blog_izumi.html">-JOBサポートYOU泉中央</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">企業様へ</a>
+                        <ul class="head-sub">
+                            <li><a href="tocompany.html">-障害者雇用をお考えの企業様へ</a></li>
+                            <li><a href="outsourcing.html">-アウトソーシング</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="recruit.html">採用について</a></li>
+                </ul>
+            </div>
+            <p>&copy;JOB SUPPORT YOU ASAHIGAOKA</p>
+        </div>
+    </footer>
+
+    <!-- jQueryの読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!--slickの読み込み -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <!-- javascript読み込み -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

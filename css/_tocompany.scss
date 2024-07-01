@@ -1,0 +1,40 @@
+@import "color";
+@import "breakpoint";
+@import "mixin";
+
+#tocompany-page {
+    .section-inner {
+        .tocompany-cont {
+            text-align: left;
+            li {
+                margin-bottom: 30px;
+                @include mq(tab) {
+                    margin-bottom: 20px;
+                }
+                p.sub-text {
+                    background-color: $color-bg;
+                    margin-top: 15px;
+                    padding: 30px 60px;
+                    @include mq(tab) {
+                        padding: 20px;
+                        margin-top: 10px;
+                    }
+                }
+                .btn-cont {
+                    margin-top: 15px;
+                    @include mq(tab) {
+                        margin-top: 10px;
+                    }
+                    .btn-item {
+                        &:nth-of-type(1) {
+                            margin-bottom: 15px;
+                            @include mq(tab) {
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

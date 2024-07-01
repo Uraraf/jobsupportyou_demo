@@ -1,0 +1,99 @@
+@import "color";
+@import "breakpoint";
+@import "mixin";
+
+#mainvisual {
+    position: relative;
+    background-image: url(../img/top_bg.svg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 510px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 3s;
+    &.fade-in {
+        opacity: 1;
+        visibility: visible;
+    }
+    @include mq(tab) {
+        background-image: url(../img/top_bg_SP.svg);
+        height: 240px;
+    }
+    .custom-shape-divider-bottom-1716388053 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+    .custom-shape-divider-bottom-1716388053 svg {
+        position: relative;
+        display: block;
+        width: calc(132% + 1.3px);
+        height: 188px;
+        transform: rotateY(180deg);
+        @include mq(tab) {
+            height: 75px;
+        }
+    }
+    .custom-shape-divider-bottom-1716388053 .shape-fill {
+        fill: #FFFFFF;
+    }
+    h2.maincopy {
+        font-size: 1.125rem;
+        font-weight: 400;
+        writing-mode: vertical-rl;
+        position: absolute;
+        top: 9%;
+        left: 25%;
+        line-height: 2.2;
+        text-align: right;
+        text-shadow: 2px 3px 3px rgba(222,190,167);
+        @include mq(tab) {
+            font-size: 0.75rem;
+        }
+    }
+}
+#about {
+    padding-top: 60px;
+    @include mq(tab) {
+        padding-top: 40px;
+    }
+    .text {
+        margin-bottom: 30px;
+        @include mq(tab) {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        p {
+            &:nth-child(1) {
+                margin-bottom: 25px;
+                @include mq(tab) {
+                    margin-bottom: 15px;
+                }
+            }
+            span {
+                display: inline-block;
+                font-size: 1.25rem;
+                @include mq(tab){
+                    font-size: 0.875rem;
+                }
+            }
+        }
+    }
+}
+
+#contact {
+    .section-inner {
+        > img {
+            width: 100%;
+            margin-bottom: 30px;
+            @include mq(tab) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@import "color";
+@import "breakpoint";
+@import "mixin";
+
+#article-page {
+    .section-inner {
+        .article-cont {
+            img {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+            h4.article-title {
+                font-size: 1.25rem;
+                margin-bottom: 10px;
+            }
+            p {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

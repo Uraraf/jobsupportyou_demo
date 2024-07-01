@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="">
+    <!-- reset.css読み込み -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <!-- プラグイン「slick」のcssを読み込む -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+
+    <!-- style.cssの読み込み -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <h1 class="site-logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="会社ロゴ">
+                </a>
+            </h1>
+            <nav class="nav-pc">
+                <ul class="nav-menu">
+                    <li class="has-child">
+                        <a href="#">会社情報</a>
+                        <ul class="head-sub">
+                            <li><a href="company.html">会社概要</a></li>
+                            <li><a href="attempt.html">弊社の取り組み</a></li>
+                            <li><a href="document.html">資料請求</a></li>
+                            <li class="has-child staff">
+                                <a href="#">職員紹介</a>
+                                <ul class="staff-sub">
+                                    <li><a href="staff_asahi.html">JOBサポートYOU旭ヶ丘</a></li>
+                                    <li><a href="staff_izumi.html">JOBサポートYOU泉中央</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="privacypolicy.html">利用規約</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="service.html">事業内容</a></li>
+                    <li><a href="access.html">アクセス</a></li>
+                    <li class="has-child">
+                        <a href="#">ブログ</a>
+                        <ul class="head-sub blog">
+                            <li><a href="blog_asahi.html">そら大好き子さんのブログ</a></li>
+                            <li><a href="blog_izumi.html">JOBサポートYOU泉中央</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-child">
+                        <a href="#">企業様へ</a>
+                        <ul class="head-sub company">
+                            <li><a href="tocompany.html">障害者雇用をお考えの企業様へ</a></li>
+                            <li><a href="outsourcing.html">アウトソーシング</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="recruit.html">採用について</a></li>
+                </ul>
+            </nav>
+            <nav class="nav-sp">
+                <ul class="nav-menu">
+                    <li class="has-child"><a href="#">会社情報</a>
+                        <ul class="head-sub">
+                            <li><a href="company.html">-会社概要</a></li>
+                            <li><a href="attempt.html">-弊社の取り組み</a></li>
+                            <li><a href="document.html">-資料請求</a></li>
+                            <li>
+                                <a href="#">-職員紹介</a>
+                                <ul class="head-sub staff">
+                                    <li><a href="staff_asahi.html">・JOBサポートYOU旭ヶ丘</a></li>
+                                    <li><a href="staff_izumi.html">・JOBサポートYOU泉中央</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="privacypolicy.html">-利用規約</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="service.html">事業内容</a></li>
+                    <li><a href="access.html">アクセス</a></li>
+                    <li class="has-child">
+                        <a href="#">ブログ</a>
+                        <ul class="head-sub">
+                            <li><a href="blog_asahi.html">-そら大好き子さんのブログ</a></li>
+                            <li><a href="blog_izumi.html">-JOBサポートYOU泉中央</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-child"><a href="#">企業様へ</a>
+                        <ul class="head-sub">
+                            <li><a href="tocompany.html">-障害者雇用をお考えの企業様へ</a></li>
+                            <li><a href="outsourcing.html">-アウトソーシング</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="recruit.html">採用について</a></li>
+                </ul>
+            </nav>
+            <div class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="service-page">
+            <h3 class="section-title-page"><span class="section-title-en">SERVICE</span>事業内容</h3>
+            <div class="service-maincopy">
+                <p>仙台市にある<span>就労継続支援B型事業所</span>です。</p>
+                <p>弊社での作業はパソコンを使用しての作業や手作業も豊富に用意があり、在宅での作業も可能になっております。<br class="sp-only">
+                    また、就職に向けた訓練や各種講座や資格取得に向けた学習の機会を持つことも可能です。
+                </p>
+            </div>
+            <div class="section-inner">
+                <div class="service-text">
+                    <p class="underline">就労継続支援B型とは？</p>
+                    <p>就労継続支援B型は、一般企業や他の雇用形態での就労が難しい方々に向けて提供される支援サービスです。<br>
+                        働くために必要な知識やスキルを身につけるための訓練を受けることも可能です。
+                    </p>
+                    <p>
+                        また、就労継続支援B型事業所での仕事は「生産活動」とよばれ、その対価として「工賃」を受け取ります。生産活動の内容は事業所によって異なりますが、農作業や部品加工などの軽作業が多く、細分化された作業を行う場合が多いです。
+                    </p>
+                    <p>
+                        この制度は、障害者をお持ちの方が社会参加や自己実現を図るために重要な役割を果たしています。
+                    </p>
+                </div>
+                <div class="service-circle">
+                    <ul class="circle-cont">
+                        <li>
+                            <p class="white">障害者の<br>職業生活支援</p>
+                            <p class="text">障害者の能力や意欲に合わせて、適切な職場環境や支援を提供します。</p>
+                        </li>
+                        <li>
+                            <p class="white">就労スキルの向上</p>
+                            <p class="text">職業訓練や指導を通じて、障害者のスキルや能力を向上させます。</p>
+                        </li>
+                        <li>
+                            <p class="white">生活支援の実施</p>
+                            <p class="text">生活リズム改善の取り組みについて相談援助を行います。</p>
+                        </li>
+                        <li>
+                            <p class="white">自立した<br>就労の促進</p>
+                            <p class="text">障害者が能力に応じて自立した就労を目指し、経験や自己成長を重ねます。</p>
+                        </li>
+                        <li>
+                            <p class="white">自企業との連携</p>
+                            <p class="text">企業や事業所と連携し、障害者の雇用や働きやすい環境を実現するための支援を行います。</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="job-page">
+            <div class="section-inner">
+                <h3 class="section-title-page"><span class="section-title-en">JOB</span>仕事の内容</h3>
+                <div class="job-cont flex">
+                    <ul>
+                        <li class="job-item">
+                            <p class="job-name">
+                                PCを使用した作業
+                            </p>
+                            <img src="img/icon_pc.svg" alt="">
+                            <ul class="job-work">
+                                <li>書類のスキャン</li>
+                                <li>エクセルファイルへのデータ入力</li>
+                                <li>PDFデータのファイル名書き換え</li>
+                                <li>BPO作業<span class="small">※BPOビジネスプロセスアウトソーシング</span>
+                                    <p class="sub">→レシート入力業務</p>
+                                </li>
+                                <li>在宅就労の場合はPC作業になります。</li>
+                            </ul>
+                        </li>
+                        <li class="job-item">
+                            <p class="job-name">
+                                手作業
+                            </p>
+                            <img src="img/icon_note.svg" alt="">
+                            <ul class="job-work">
+                                <li>DM（ダイレクトメール）の封入、ラベル張り、チラシ折り</li>
+                                <li>製本作業</li>
+                                <li>シュレッダー作業</li>
+                                <li>ポスティング</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="event-cont flex">
+                    <div class="event-text">
+                        <p class="orange">イベントもあり！</p>
+                        <ul>
+                            <li>外出行事（タピオ、三井アウトレット、動物園など昼食を食べながらリフレッシュをします）</li>
+                            <li>出前行事（地域の飲食店から出前を取ります）</li>
+                        </ul>
+                    </div>
+                    <img src="img/person.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="place-page">
+            <div class="section-inner">
+                <h3 class="section-title-page"><span class="section-title-en">PLACE</span>事業所</h3>
+                <div class="place-cont">
+                    <div class="place-item asahi">
+                        <h4 class="head">ジョブサポートYOU旭ヶ丘</h4>
+                        <p class="address">宮城県仙台市青葉区旭ヶ丘3丁目6-12フォレスト旭ヶ丘T101</p>
+                        <div class="satellite-office">
+                            <div class="satellite-textblock">
+                                <p class="underline">サテライトオフィス</p>
+                                <p>ジョブサポートYOU旭ヶ丘事業所限定で新たにサテライトオフィスが完成しました。<br>
+                                白を基調とした落ち着いた空間で働くことができます。</p>
+                                <p class="address">【住所】仙台市青葉区旭ヶ丘3丁目17番地18号パレスビジョンB1FROOM E</p>
+                                <p class="access">【アクセス】仙台市市営地下鉄旭ヶ丘駅徒歩4分</p>
+                            </div>
+                            <div class="satellite-imgblock">
+                                <ul class="satellite-slick">
+                                    <li><img src="img/satellite01.jpeg" alt=""></li>
+                                    <li><img src="img/satellite02.jpeg" alt=""></li>
+                                    <li><img src="img/satellite03.jpeg" alt=""></li>
+                                    <li><img src="img/satellite04.jpeg" alt=""></li>
+                                    <li><img src="img/satellite05.jpeg" alt=""></li>
+                                    <li><img src="img/satellite06.jpeg" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="place-item izumi">
+                        <h4 class="head">ジョブサポートYOU泉中央</h4>
+                        <p class="address">仙台市泉区泉中央3丁目36-1セントレアカマⅡ201</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="price-page">
+            <div class="section-inner">
+                <h3 class="section-title-page"><span class="section-title-en">PRICE</span>金額</h3>
+                <div class="price-cont three-column">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>区分</td>
+                                <td>世帯収入状況</td>
+                                <td>負担上限月額</td>
+                            </tr>
+                            <tr>
+                                <td>生活保護</td>
+                                <td>生活保護受給世帯</td>
+                                <td>0円</td>
+                            </tr>
+                            <tr>
+                                <td>低所得</td>
+                                <td>市町村民税非課税世帯</td>
+                                <td>0円</td>
+                            </tr>
+                            <tr>
+                                <td>一般1</td>
+                                <td class="padding">市町村民税課税世帯（所得割１６万円未満）<br>※入所施設利用者（２０歳以上）、グループホーム利用者を除きます</td>
+                                <td>9,300円</td>
+                            </tr>
+                            <tr>
+                                <td>一般2</td>
+                                <td>上記以外</td>
+                                <td>37,200円</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="mark">
+                        ※詳細は自治体にご確認ください
+                    </p>
+                </div>
+                <div class="price-cont two-column">
+                    <p class="orange">
+                        所得を判断する際の世帯の範囲は、次のとおりです。
+                    </p>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>種別</td>
+                                <td>世帯の範囲</td>
+                            </tr>
+                            <tr>
+                                <td>18歳以上の障害者<br>（施設に入所する18、19歳を除く）</td>
+                                <td>障害のある人と<br class="sp-only">その配偶者</td>
+                            </tr>
+                            <tr>
+                                <td>障害児<br>（施設に入所する18、19歳を含む</td>
+                                <td>保護者の属する<br class="sp-only">住民基本台帳での世帯</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section id="other-page">
+            <div class="section-inner">
+                <h3 class="section-title-page"><span class="section-title-en">OTHER</span>その他</h3>
+                <p>
+                    1食225円で昼食を提供しています。30種類の中からお好きなメニューを日替わりで楽しめます。<br>
+                    料金は工賃から天引きになります。
+                </p>
+            </div>
+        </section>
+        <section id="transportation-page">
+            <div class="section-inner">
+                <h3 class="section-title-page"><span class="section-title-en">TRANSPORTATION</span>送迎範囲</h3>
+                <p>
+                    就労継続支援B型のみ送迎を実施しております。<br>
+                    送迎範囲については約５ｋｍ圏内としております。<br>
+                    詳しくはご相談ください。
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="section-inner">
+            <div class="footer-cont">
+                <a class="twitter-timeline" data-width="70%" data-height="200" href="https://twitter.com/YOU15800612?ref_src=twsrc%5Etfw">Tweets by YOU15800612</a>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="#">会社情報</a>
+                        <ul class="head-sub">
+                            <li><a href="company.html">-会社概要</a></li>
+                            <li><a href="attempt.html">-弊社の取り組み</a></li>
+                            <li><a href="document.html">-資料請求</a></li>
+                            <li>
+                                <a href="staff.html">-職員紹介</a>
+                                <ul class="head-sub">
+                                    <li><a href="staff_asahi.html">・JOBサポートYOU旭ヶ丘</a></li>
+                                    <li><a href="staff_izumi.html">・JOBサポートYOU泉中央</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="privacypolicy.html">-利用規約</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="service.html">事業内容</a></li>
+                    <li><a href="access.html">アクセス</a></li>
+                    <li><a href="#">ブログ</a>
+                        <ul class="head-sub">
+                            <li><a href="blog_asahi.html">-そら大好き子さんのブログ</a></li>
+                            <li><a href="blog_izumi.html">-JOBサポートYOU泉中央</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">企業様へ</a>
+                        <ul class="head-sub">
+                            <li><a href="tocompany.html">-障害者雇用をお考えの企業様へ</a></li>
+                            <li><a href="outsourcing.html">-アウトソーシング</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="recruit.html">採用について</a></li>
+                </ul>
+            </div>
+            <p>&copy;JOB SUPPORT YOU ASAHIGAOKA</p>
+        </div>
+    </footer>
+
+    <!-- jQueryの読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!--slickの読み込み -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <!-- javascript読み込み -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
